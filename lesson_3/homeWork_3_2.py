@@ -3,16 +3,28 @@
 # Функция должна принимать параметры как именованные аргументы.
 # Осуществить вывод данных о пользователе одной строкой.
 
+# Вношу исправления по замечанию:
+# 2 задача
+# Функция должна принимать параметры как именованные аргументы.
 
-def function(name='', second_name='', year_birth='', town='', email='', phone_n=''):
-    print(name, second_name, year_birth, town, email, phone_n)
+def named_arg(formal, *arguments, **keywords):
+    print("Данные пользователя:", formal)
+    print('-' * 40)
+    for arg in arguments:
+        print(arg, end="\0 ")
+    for kw in keywords.keys():
+        print(kw, ':', keywords[kw], end="\0 ")
 
 
-n = input("Введите имя: ")
-s = input("Ведите фамилию: ")
-y = input("Введите год рождения: ")
-t = input("Введите название города: ")
-e = input("Введите адрес электронной почты: ")
-p = input("Введите номер телефона: ")
+# function(n, s, y, t, e, p)
 
-function(n, s, y, t, e, p)
+named_arg('гражданин',
+          'Александр',
+          'Леснов',
+          '1986',
+          'Москва',
+          'alexander@mail.ru',
+          '8(495)8987865',
+          language='Russian',
+          author='Erigardo')
+
