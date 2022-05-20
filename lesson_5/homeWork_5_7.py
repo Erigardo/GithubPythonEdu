@@ -17,6 +17,7 @@
 
 
 f = open("filename7.txt")
+f_w = open("filename7.txt", "a+")
 strokes = f.readlines()
 profit_company_list = []
 company_profit_dict_list = []
@@ -49,6 +50,20 @@ for i in profit_company_list:
 medium_d = d / len(profit_company_list)
 print(f"Средний доход по безубыточным организациям: {medium_d}")
 print(company_profit_dict_list)
+
+import json
+
+dictionary = company_profit_dict_list
+# добавим отступов
+jsonString = json.dumps(dictionary, indent=4)
+# print(dictionary)
+# print(jsonString)
+# Здесь мы используем оператор with, чтобы открыть файл
+with f_w as outfile:
+    # используем метод json.dump, чтобы записать наши словари в файл
+    json.dump(jsonString, outfile)
+
+
 # Coca-cola ООО 200000 75000
 # H&M ОАО 40000 15000
 # Unilever Corp 100000 35000
