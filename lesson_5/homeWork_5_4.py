@@ -11,10 +11,11 @@
 
 
 my_file = open("filename4.txt", "r")
-my_file_w = open("filename.txt", "a+")
+my_file_w = open("filename4.txt", "a+")
 stroke = my_file.readlines()
 russian_list = ["Один", "Два", "Три", "Четыре"]
 new_list = []
+stroke = [line.rstrip() for line in stroke]
 print(stroke)
 c = 0
 stroke_r = ''
@@ -26,5 +27,5 @@ for i in stroke:
     stroke[0] = russian_list[c]
     # Конвертируем список в строку
     stroke_r = (" ".join(map(str, stroke)))
-    my_file_w.write(stroke_r)
+    my_file_w.write(stroke_r + "\n")
     c += 1
