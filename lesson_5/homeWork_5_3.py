@@ -32,24 +32,24 @@ for i in stroke:
 data_dict = dict(zip(data_people, data_money))
 print("*"*30, "Из которых:")
 c = 1
-summ_m = 0
+sum_m = 0
 for key, value in data_dict.items():
     # Вычислим сотрудников с зарплатами меньше 20тыс
     if int(value) < 20000:
         print(key, ":", value)
         c += 1
-        summ_m += int(value)
+        sum_m += int(value)
 # print("\n")
 print("*"*30, f"{c} имеют зарплату ниже 20000")
 
 print("Выполним подсчёт средней величины дохода сотрудников: ")
-summ = 0
+sum_m = 0
 for key, value in data_dict.items():
     # Вычислим среднюю величину дохода сотрудников
-    summ += int(value)
+    sum_m += int(value)
 
-median_all = summ/2
-median_m = summ_m/2
+median_all = sum_m / 2
+median_m = sum_m/2
 print(median_all, "средняя по доходу у всех")
 print(median_m, "средняя по доходу у всех меньше 20000")
 

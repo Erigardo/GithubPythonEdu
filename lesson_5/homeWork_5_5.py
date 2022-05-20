@@ -17,7 +17,3 @@ for i in numbers:
         sum_num += k
 
 print(sum_num)
-
-
-
-
