@@ -10,7 +10,7 @@
 
 import re
 
-my_file = open("filename.txt", "r")
+my_file = open("filename3.txt", "r")
 stroke = my_file.readlines()
 stroke_count = len(stroke)
 print(f"В фаиле записано {stroke_count} сотрудников.")

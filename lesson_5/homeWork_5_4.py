@@ -10,7 +10,7 @@
 # Новый блок строк должен записываться в новый текстовый файл.
 
 
-my_file = open("filename.txt", "r")
+my_file = open("filename4.txt", "r")
 my_file_w = open("filename.txt", "a+")
 stroke = my_file.readlines()
 russian_list = ["Один", "Два", "Три", "Четыре"]

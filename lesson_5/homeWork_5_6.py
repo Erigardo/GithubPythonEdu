@@ -9,7 +9,7 @@
 # Физкультура: — 30(пр) —
 # Пример словаря: {“Информатика”: 170, “Физика”: 40, “Физкультура”: 30}
 
-my_file = open("filename.txt", "r")
+my_file = open("filename6.txt", "r")
 string_ed = my_file.readlines()
 data_ed = []
 x = 0

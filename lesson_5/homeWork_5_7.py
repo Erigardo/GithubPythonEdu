@@ -16,7 +16,7 @@
 # Подсказка: использовать менеджер контекста.
 
 
-f = open("filename.txt")
+f = open("filename7.txt")
 strokes = f.readlines()
 profit_company_list = []
 company_profit_dict_list = []

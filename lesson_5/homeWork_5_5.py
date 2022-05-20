@@ -4,7 +4,7 @@
 # чисел в файле и выводить её на экран.
 from random import randint
 
-my_file = open('filename.txt', 'w')
+my_file = open('filename5.txt', 'w')
 for i in range(10):
     a = str(randint(0, 99))
     my_file.write(" ".join(a))
