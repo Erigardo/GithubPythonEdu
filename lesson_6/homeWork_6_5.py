@@ -49,3 +49,4 @@ pencil = Pencil('Карандаш')
 print(pencil.draw())
 handle = Handle('Маркер')
 print(handle.draw())
+

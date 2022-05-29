@@ -25,3 +25,4 @@ class Road:
 myRoad = Road(2, 3)
 # передаем в сантиметрах
 myRoad.m_all_road(2)
+
